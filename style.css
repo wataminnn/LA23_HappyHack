@@ -46,6 +46,11 @@ nav{
     right: 0;
     z-index: 2;
 }
+@media screen and (max-width:768px){
+    nav{
+        display: none;
+    }
+}
 
 ul{
     display: flex;
@@ -82,7 +87,6 @@ nav a:hover{
 h1{
     display: block;
     font-size: 2em;
-    font-weight: bold;
  }
 
 .logo img{
@@ -152,6 +156,45 @@ h2{
     padding-bottom: 100px;
 }
 
+@media screen and (max-width:1024px){
+h2{
+    font-size: 46px;
+}
+
+.intro-detail{
+    flex-direction: column-reverse;
+}
+    
+.intro-reverse{
+    flex-direction: column-reverse;
+}
+
+.intro-text{
+    padding: 20px 10px;
+}
+
+.intro-text p{
+    font-size: 13px;
+}
+
+}
+    
+@media screen and (max-width:555px){
+.introduction img{
+    width: 90vw;
+}
+        
+.intro-text{  
+    width: 90vw;
+}
+}
+
+@media screen and (max-width:450px){
+h2{
+    font-size: 32px;
+}  
+}
+
 .btn-yellow{
     background-color: #ffbf00;
     border-radius: 12px;
@@ -171,7 +214,7 @@ h2{
 .wrap{
     position: relative;
     background-color: #deebff;
-    padding: 1px 15% 80px;
+    padding: 1px 10% 80px;
 }
 
 canvas {
@@ -181,12 +224,20 @@ canvas {
     z-index: 1;
   }
 
+#particles-js{
+    height: 100%;
+    z-index: -1;
+}
+
+
 .course-container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto 50px;
 }
 
 .course-info{
@@ -199,6 +250,7 @@ canvas {
     padding: 25px;
     width: 240px;
     height: 340px;
+    z-index: 2;
 }
 
 .course-img{
@@ -211,7 +263,8 @@ canvas {
 }
 
 .course-info img{
-    width: 70%;
+    width: 60%;
+    height: auto;
 }
 
 .course-info p{
@@ -239,6 +292,41 @@ canvas {
     transition: 0.5s;
 }
 
+@media screen and (max-width:768px){
+.course-container{
+    width: 100%;
+}
+
+.course-info{
+    width: 160px;
+    height: 200px;
+    padding: 0;
+    padding-top: 12px;
+}
+
+.course-img{
+    width: 90px;
+    height: 82px;
+    margin: 0 auto;
+}
+
+.course-img img{
+    height: 70px;
+    width: auto;
+}
+
+.course-info p{
+    font-size: 14px;
+}
+
+.course-info a{
+    width: 140px;
+    font-size: 12px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+}
+
 .html a{
     background-color: #f16529;
 }
@@ -252,7 +340,7 @@ canvas {
 }
 
 .ruby a{
-    background-color: #333;
+    background-color: #ff5252;
 }
 
 .js a{
@@ -286,6 +374,12 @@ canvas {
     display: block;
     margin: 0 auto;
     margin-bottom: 40px;
+}
+
+@media screen and (max-width:768px){
+.access iframe{
+    width: 100%;
+}
 }
 
 footer{
