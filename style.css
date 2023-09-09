@@ -77,29 +77,56 @@ nav a{
     font-size: 24px;
     line-height: 48px;
     text-align: left;
+    transition: 0.5s;
 }
 
 nav a:hover{
-    transition: 0.5s;
     color: #4063ff;
 }
 
 h1{
     display: block;
-    font-size: 2em;
  }
 
 .logo img{
     width: 100%;
 }
 
-.logo P{
+.logo p{
     color: #ffffff;
     font-family: Futura;
-    font-size: 2.7vw;
-
+    font-size: 45px;
     margin:30px 0px 0px;
     text-align: center;
+}
+
+@media screen and (max-width:1024px){
+.logo{
+    width: 80%;
+}
+
+.h1{
+    text-align: center;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.logo p{
+    margin-top: 20px;
+    font-size: 36px;
+}
+}
+
+@media screen and (max-width:768px){
+.logo p{
+    font-size: 24px;
+}
+}
+
+@media screen and (max-width:450px){
+.logo p{
+    font-size: 18px;
+}
 }
 
 h2{
@@ -146,6 +173,7 @@ h2{
     font-weight: 700;
     line-height: 40px;
     padding: 10px 50px;
+    transition: 0.5s;
 }
 
 .intro-reverse{
@@ -175,6 +203,7 @@ h2{
 
 .intro-text p{
     font-size: 13px;
+    line-height: 200%;
 }
 
 }
@@ -204,11 +233,11 @@ h2{
     font-weight: 700;
     line-height: 40px;
     padding: 10px 50px;
+    transition: 0.5s;
 }
 
 .btn:hover{
     box-shadow:0 0 8px gray;
-    transition: 0.5s;
 }
 
 .wrap{
@@ -286,11 +315,11 @@ canvas {
     color: #fff;
     font-family: Hiragino Kaku Gothic Pro;
     margin: 15px auto 0;
+    transition: 0.5s;
 }
 
 .course-info a:hover{
     box-shadow: #858c8e 0px 1px 11px 1px;
-    transition: 0.5s;
 }
 
 @media screen and (max-width:768px){
