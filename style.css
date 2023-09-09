@@ -293,6 +293,11 @@ canvas {
 }
 
 @media screen and (max-width:768px){
+.wrap{
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .course-container{
     width: 100%;
 }
